@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAA885581E53777C0091C496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885571E53777C0091C496 /* AppDelegate.swift */; };
+		FAA8855A1E53777C0091C496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885591E53777C0091C496 /* ViewController.swift */; };
+		FAA8855D1E53777C0091C496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA8855B1E53777C0091C496 /* Main.storyboard */; };
+		FAA885601E53777C0091C496 /* VkMultiChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAA8855E1E53777C0091C496 /* VkMultiChat.xcdatamodeld */; };
+		FAA885621E53777C0091C496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA885611E53777C0091C496 /* Assets.xcassets */; };
+		FAA885651E53777C0091C496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA885631E53777C0091C496 /* LaunchScreen.storyboard */; };
+		FAA885701E53777D0091C496 /* VkMultiChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8856F1E53777D0091C496 /* VkMultiChatTests.swift */; };
+		FAA8857B1E53777D0091C496 /* VkMultiChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8857A1E53777D0091C496 /* VkMultiChatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAA8856C1E53777D0091C496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA8854C1E53777C0091C496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA885531E53777C0091C496;
+			remoteInfo = VkMultiChat;
+		};
+		FAA885771E53777D0091C496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA8854C1E53777C0091C496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA885531E53777C0091C496;
+			remoteInfo = VkMultiChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAA885541E53777C0091C496 /* VkMultiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkMultiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA885571E53777C0091C496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA885591E53777C0091C496 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAA8855C1E53777C0091C496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA8855F1E53777C0091C496 /* VkMultiChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VkMultiChat.xcdatamodel; sourceTree = "<group>"; };
+		FAA885611E53777C0091C496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA885641E53777C0091C496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA885661E53777C0091C496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA8856B1E53777D0091C496 /* VkMultiChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkMultiChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA8856F1E53777D0091C496 /* VkMultiChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkMultiChatTests.swift; sourceTree = "<group>"; };
+		FAA885711E53777D0091C496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA885761E53777D0091C496 /* VkMultiChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkMultiChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA8857A1E53777D0091C496 /* VkMultiChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkMultiChatUITests.swift; sourceTree = "<group>"; };
+		FAA8857C1E53777D0091C496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA885511E53777C0091C496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA885681E53777D0091C496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA885731E53777D0091C496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAA8854B1E53777C0091C496 = {
+			isa = PBXGroup;
+			children = (
+				FAA885561E53777C0091C496 /* VkMultiChat */,
+				FAA8856E1E53777D0091C496 /* VkMultiChatTests */,
+				FAA885791E53777D0091C496 /* VkMultiChatUITests */,
+				FAA885551E53777C0091C496 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA885551E53777C0091C496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA885541E53777C0091C496 /* VkMultiChat.app */,
+				FAA8856B1E53777D0091C496 /* VkMultiChatTests.xctest */,
+				FAA885761E53777D0091C496 /* VkMultiChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA885561E53777C0091C496 /* VkMultiChat */ = {
+			isa = PBXGroup;
+			children = (
+				FAA885571E53777C0091C496 /* AppDelegate.swift */,
+				FAA885591E53777C0091C496 /* ViewController.swift */,
+				FAA8855B1E53777C0091C496 /* Main.storyboard */,
+				FAA885611E53777C0091C496 /* Assets.xcassets */,
+				FAA885631E53777C0091C496 /* LaunchScreen.storyboard */,
+				FAA885661E53777C0091C496 /* Info.plist */,
+				FAA8855E1E53777C0091C496 /* VkMultiChat.xcdatamodeld */,
+			);
+			path = VkMultiChat;
+			sourceTree = "<group>";
+		};
+		FAA8856E1E53777D0091C496 /* VkMultiChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8856F1E53777D0091C496 /* VkMultiChatTests.swift */,
+				FAA885711E53777D0091C496 /* Info.plist */,
+			);
+			path = VkMultiChatTests;
+			sourceTree = "<group>";
+		};
+		FAA885791E53777D0091C496 /* VkMultiChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8857A1E53777D0091C496 /* VkMultiChatUITests.swift */,
+				FAA8857C1E53777D0091C496 /* Info.plist */,
+			);
+			path = VkMultiChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA885531E53777C0091C496 /* VkMultiChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA8857F1E53777D0091C496 /* Build configuration list for PBXNativeTarget "VkMultiChat" */;
+			buildPhases = (
+				FAA885501E53777C0091C496 /* Sources */,
+				FAA885511E53777C0091C496 /* Frameworks */,
+				FAA885521E53777C0091C496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VkMultiChat;
+			productName = VkMultiChat;
+			productReference = FAA885541E53777C0091C496 /* VkMultiChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAA8856A1E53777D0091C496 /* VkMultiChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA885821E53777D0091C496 /* Build configuration list for PBXNativeTarget "VkMultiChatTests" */;
+			buildPhases = (
+				FAA885671E53777D0091C496 /* Sources */,
+				FAA885681E53777D0091C496 /* Frameworks */,
+				FAA885691E53777D0091C496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA8856D1E53777D0091C496 /* PBXTargetDependency */,
+			);
+			name = VkMultiChatTests;
+			productName = VkMultiChatTests;
+			productReference = FAA8856B1E53777D0091C496 /* VkMultiChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAA885751E53777D0091C496 /* VkMultiChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA885851E53777D0091C496 /* Build configuration list for PBXNativeTarget "VkMultiChatUITests" */;
+			buildPhases = (
+				FAA885721E53777D0091C496 /* Sources */,
+				FAA885731E53777D0091C496 /* Frameworks */,
+				FAA885741E53777D0091C496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA885781E53777D0091C496 /* PBXTargetDependency */,
+			);
+			name = VkMultiChatUITests;
+			productName = VkMultiChatUITests;
+			productReference = FAA885761E53777D0091C496 /* VkMultiChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA8854C1E53777C0091C496 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Александр Смоленский";
+				TargetAttributes = {
+					FAA885531E53777C0091C496 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XC3Q2BB5B9;
+						ProvisioningStyle = Automatic;
+					};
+					FAA8856A1E53777D0091C496 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XC3Q2BB5B9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAA885531E53777C0091C496;
+					};
+					FAA885751E53777D0091C496 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XC3Q2BB5B9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAA885531E53777C0091C496;
+					};
+				};
+			};
+			buildConfigurationList = FAA8854F1E53777C0091C496 /* Build configuration list for PBXProject "VkMultiChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA8854B1E53777C0091C496;
+			productRefGroup = FAA885551E53777C0091C496 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA885531E53777C0091C496 /* VkMultiChat */,
+				FAA8856A1E53777D0091C496 /* VkMultiChatTests */,
+				FAA885751E53777D0091C496 /* VkMultiChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA885521E53777C0091C496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA885651E53777C0091C496 /* LaunchScreen.storyboard in Resources */,
+				FAA885621E53777C0091C496 /* Assets.xcassets in Resources */,
+				FAA8855D1E53777C0091C496 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA885691E53777D0091C496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA885741E53777D0091C496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA885501E53777C0091C496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA885601E53777C0091C496 /* VkMultiChat.xcdatamodeld in Sources */,
+				FAA8855A1E53777C0091C496 /* ViewController.swift in Sources */,
+				FAA885581E53777C0091C496 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA885671E53777D0091C496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA885701E53777D0091C496 /* VkMultiChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA885721E53777D0091C496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA8857B1E53777D0091C496 /* VkMultiChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAA8856D1E53777D0091C496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA885531E53777C0091C496 /* VkMultiChat */;
+			targetProxy = FAA8856C1E53777D0091C496 /* PBXContainerItemProxy */;
+		};
+		FAA885781E53777D0091C496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA885531E53777C0091C496 /* VkMultiChat */;
+			targetProxy = FAA885771E53777D0091C496 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAA8855B1E53777C0091C496 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA8855C1E53777C0091C496 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA885631E53777C0091C496 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA885641E53777C0091C496 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAA8857D1E53777D0091C496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAA8857E1E53777D0091C496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA885801E53777D0091C496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XC3Q2BB5B9;
+				INFOPLIST_FILE = VkMultiChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = astrolka.VkMultiChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FAA885811E53777D0091C496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XC3Q2BB5B9;
+				INFOPLIST_FILE = VkMultiChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = astrolka.VkMultiChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FAA885831E53777D0091C496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XC3Q2BB5B9;
+				INFOPLIST_FILE = VkMultiChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = astrolka.VkMultiChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VkMultiChat.app/VkMultiChat";
+			};
+			name = Debug;
+		};
+		FAA885841E53777D0091C496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XC3Q2BB5B9;
+				INFOPLIST_FILE = VkMultiChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = astrolka.VkMultiChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VkMultiChat.app/VkMultiChat";
+			};
+			name = Release;
+		};
+		FAA885861E53777D0091C496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XC3Q2BB5B9;
+				INFOPLIST_FILE = VkMultiChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = astrolka.VkMultiChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VkMultiChat;
+			};
+			name = Debug;
+		};
+		FAA885871E53777D0091C496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XC3Q2BB5B9;
+				INFOPLIST_FILE = VkMultiChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = astrolka.VkMultiChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VkMultiChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA8854F1E53777C0091C496 /* Build configuration list for PBXProject "VkMultiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA8857D1E53777D0091C496 /* Debug */,
+				FAA8857E1E53777D0091C496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA8857F1E53777D0091C496 /* Build configuration list for PBXNativeTarget "VkMultiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA885801E53777D0091C496 /* Debug */,
+				FAA885811E53777D0091C496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAA885821E53777D0091C496 /* Build configuration list for PBXNativeTarget "VkMultiChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA885831E53777D0091C496 /* Debug */,
+				FAA885841E53777D0091C496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAA885851E53777D0091C496 /* Build configuration list for PBXNativeTarget "VkMultiChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA885861E53777D0091C496 /* Debug */,
+				FAA885871E53777D0091C496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAA8855E1E53777C0091C496 /* VkMultiChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAA8855F1E53777C0091C496 /* VkMultiChat.xcdatamodel */,
+			);
+			currentVersion = FAA8855F1E53777C0091C496 /* VkMultiChat.xcdatamodel */;
+			path = VkMultiChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAA8854C1E53777C0091C496 /* Project object */;
+}
