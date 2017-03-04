@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="VkMultiChat" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="7ZX-1d-c6c" id="qud-p4-kJ8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7ZX-1d-c6c">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вход VK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDS-OP-Dqw">
+                    <rect key="frame" x="130" y="136" width="115" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.60784313729999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCP-Uk-6WC">
+                    <rect key="frame" x="90" y="237" width="194" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="contentEdgeInsets" minX="15" minY="8" maxX="15" maxY="8"/>
+                    <state key="normal" title="Ввести логин и пароль">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="loginWithLoginAndPass:" destination="-1" eventType="touchUpInside" id="lbF-9Q-Y3q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcf-zG-Uqo">
+                    <rect key="frame" x="90" y="279" width="194" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
+                    <state key="normal" title="Через приложение Вк">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="loginWithApp:" destination="-1" eventType="touchUpInside" id="juO-wD-qEh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Qcf-zG-Uqo" firstAttribute="top" secondItem="RCP-Uk-6WC" secondAttribute="bottom" constant="8" id="3Ok-BD-H0d"/>
+                <constraint firstItem="Qcf-zG-Uqo" firstAttribute="width" secondItem="RCP-Uk-6WC" secondAttribute="width" id="H25-c8-Oea"/>
+                <constraint firstItem="UDS-OP-Dqw" firstAttribute="top" secondItem="7ZX-1d-c6c" secondAttribute="top" constant="136" id="cR5-Gr-E6O"/>
+                <constraint firstItem="UDS-OP-Dqw" firstAttribute="centerX" secondItem="7ZX-1d-c6c" secondAttribute="centerX" id="fJV-Xy-PF0"/>
+                <constraint firstItem="RCP-Uk-6WC" firstAttribute="top" secondItem="UDS-OP-Dqw" secondAttribute="bottom" constant="65" id="lKn-VG-xP9"/>
+                <constraint firstItem="Qcf-zG-Uqo" firstAttribute="centerX" secondItem="7ZX-1d-c6c" secondAttribute="centerX" id="mdF-lH-BFD"/>
+                <constraint firstItem="RCP-Uk-6WC" firstAttribute="centerX" secondItem="7ZX-1d-c6c" secondAttribute="centerX" id="pnf-nF-c1u"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

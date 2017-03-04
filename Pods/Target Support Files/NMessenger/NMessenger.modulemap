@@ -1,0 +1,6 @@
+framework module NMessenger {
+  umbrella header "NMessenger-umbrella.h"
+
+  export *
+  module * { export * }
+}

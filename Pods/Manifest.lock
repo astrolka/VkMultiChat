@@ -1,0 +1,52 @@
+PODS:
+  - AsyncDisplayKit (2.1):
+    - AsyncDisplayKit/PINRemoteImage (= 2.1)
+  - AsyncDisplayKit/Core (2.1)
+  - AsyncDisplayKit/PINRemoteImage (2.1):
+    - AsyncDisplayKit/Core
+    - PINRemoteImage/iOS (= 3.0.0-beta.7)
+    - PINRemoteImage/PINCache
+  - NMessenger (1.0.80):
+    - AsyncDisplayKit (= 2.1)
+  - PINCache (3.0.1-beta.2):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.2)
+    - PINCache/Core (= 3.0.1-beta.2)
+  - PINCache/Arc-exception-safe (3.0.1-beta.2):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.2)
+  - PINRemoteImage/Core (3.0.0-beta.7)
+  - PINRemoteImage/iOS (3.0.0-beta.7):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.7):
+    - PINCache (= 3.0.1-beta.2)
+    - PINRemoteImage/Core
+  - SwiftyJSON (3.1.4)
+  - VK-ios-sdk (1.4.6)
+
+DEPENDENCIES:
+  - NMessenger (from `https://github.com/eBay/NMessenger`, commit `28d3a523dd87db769bad764e9a7f1c2af6b22c11`, branch `ASDK-2.1`)
+  - SwiftyJSON
+  - VK-ios-sdk
+
+EXTERNAL SOURCES:
+  NMessenger:
+    :branch: ASDK-2.1
+    :commit: 28d3a523dd87db769bad764e9a7f1c2af6b22c11
+    :git: https://github.com/eBay/NMessenger
+
+CHECKOUT OPTIONS:
+  NMessenger:
+    :commit: 28d3a523dd87db769bad764e9a7f1c2af6b22c11
+    :git: https://github.com/eBay/NMessenger
+
+SPEC CHECKSUMS:
+  AsyncDisplayKit: 28de788f9d6ec573be7662f0fe8931e656357e93
+  NMessenger: 47d513e0bd16942e310c82d73f3ef78388cd0682
+  PINCache: 6d273a6e0754bd26e3f12a38a90dde73cc6a42b2
+  PINRemoteImage: ff63baf185088530db6cfa41cb665e2b5126b5c3
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  VK-ios-sdk: 7fd48bc5aaa6b96c3197c1987eb6593f2ea67331
+
+PODFILE CHECKSUM: bc57cab55d7b5f3031002c4136faf630c561d5a3
+
+COCOAPODS: 1.2.0

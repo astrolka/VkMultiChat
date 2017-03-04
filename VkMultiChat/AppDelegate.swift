@@ -8,15 +8,41 @@
 
 import UIKit
 import CoreData
+import VK_ios_sdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var vkSdk: VKSdk!
+    var navController: UINavigationController!
+    var services: VMServicesProtocol!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        var viewModel: Any!
+        
+        vkSdk = VKSdk.initialize(withAppId: "5875924")
+        navController = UINavigationController()
+        navController.navigationBar.isTranslucent = false
+        navController.navigationBar.barTintColor = .blue
+        navController.navigationBar.tintColor = .white
+        navController.navigationBar.titleTextAttributes = [ NSForegroundColorAttributeName : UIColor.white ]
+        services = ViewModelServices(navController)
+        
+        VKSdk.wakeUpSession(services.SCOPE) { (state, err) in }
+        viewModel = VKSdk.isLoggedIn() ? DialogsViewModel(services) : LoginViewModel(services)
+        services.pushViewModel(viewModel, animated: false)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        
+        return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        VKSdk.processOpen(url, fromApplication: UIApplicationOpenURLOptionsKey.sourceApplication.rawValue)
         return true
     }
 

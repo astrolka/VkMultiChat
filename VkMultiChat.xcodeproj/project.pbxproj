@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67DE8E36AD0BE045AA9397F9 /* Pods_VkMultiChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A321FB829D9C78FB6311B609 /* Pods_VkMultiChat.framework */; };
+		FA41089F1E5B331B00FEE6C9 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41089E1E5B331B00FEE6C9 /* ChatModel.swift */; };
+		FA4108A11E5B393200FEE6C9 /* LinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108A01E5B393200FEE6C9 /* LinkModel.swift */; };
+		FA4108A31E5BC60A00FEE6C9 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108A21E5BC60A00FEE6C9 /* ChatViewModel.swift */; };
+		FA4108AC1E5C951D00FEE6C9 /* MessagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108AB1E5C951D00FEE6C9 /* MessagesModel.swift */; };
+		FA4108AE1E5CBB0200FEE6C9 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108AD1E5CBB0200FEE6C9 /* MessagesController.swift */; };
+		FA4108B11E5CBB7400FEE6C9 /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108B01E5CBB7400FEE6C9 /* MessagesViewModel.swift */; };
+		FA4108B41E5D7B8F00FEE6C9 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108B31E5D7B8F00FEE6C9 /* MessageViewModel.swift */; };
+		FA4108B61E5DCA0400FEE6C9 /* MessageGroupExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108B51E5DCA0400FEE6C9 /* MessageGroupExtensions.swift */; };
+		FA4108B81E5F48DE00FEE6C9 /* MessageContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108B71E5F48DE00FEE6C9 /* MessageContentNode.swift */; };
+		FA4108BA1E5F490F00FEE6C9 /* NestedMessageContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108B91E5F490F00FEE6C9 /* NestedMessageContentNode.swift */; };
+		FA4108BC1E5FB3C400FEE6C9 /* HeaderFwdMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108BB1E5FB3C400FEE6C9 /* HeaderFwdMessage.swift */; };
+		FA4108BE1E5FBE7000FEE6C9 /* VerticalDeterminator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108BD1E5FBE7000FEE6C9 /* VerticalDeterminator.swift */; };
 		FAA885581E53777C0091C496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885571E53777C0091C496 /* AppDelegate.swift */; };
-		FAA8855A1E53777C0091C496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885591E53777C0091C496 /* ViewController.swift */; };
-		FAA8855D1E53777C0091C496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA8855B1E53777C0091C496 /* Main.storyboard */; };
+		FAA8855A1E53777C0091C496 /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885591E53777C0091C496 /* DialogsViewController.swift */; };
 		FAA885601E53777C0091C496 /* VkMultiChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAA8855E1E53777C0091C496 /* VkMultiChat.xcdatamodeld */; };
 		FAA885621E53777C0091C496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA885611E53777C0091C496 /* Assets.xcassets */; };
 		FAA885651E53777C0091C496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA885631E53777C0091C496 /* LaunchScreen.storyboard */; };
 		FAA885701E53777D0091C496 /* VkMultiChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8856F1E53777D0091C496 /* VkMultiChatTests.swift */; };
 		FAA8857B1E53777D0091C496 /* VkMultiChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8857A1E53777D0091C496 /* VkMultiChatUITests.swift */; };
+		FAA885891E53A31A0091C496 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885881E53A31A0091C496 /* LoginViewController.swift */; };
+		FAA8858C1E53C2D80091C496 /* ViewModelServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8858B1E53C2D80091C496 /* ViewModelServices.swift */; };
+		FAA8858E1E53C2F10091C496 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8858D1E53C2F10091C496 /* Protocols.swift */; };
+		FAA885D11E551DC30091C496 /* DialogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885D01E551DC30091C496 /* DialogsViewModel.swift */; };
+		FAA885D41E551EB80091C496 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885D31E551EB80091C496 /* LoginViewModel.swift */; };
+		FAA885D61E564C6D0091C496 /* DialogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885D51E564C6D0091C496 /* DialogViewModel.swift */; };
+		FAA885D81E565FDF0091C496 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA885D71E565FDF0091C496 /* LoginViewController.xib */; };
+		FAA885DE1E56F51F0091C496 /* DialogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885DD1E56F51F0091C496 /* DialogModel.swift */; };
+		FAA885E21E56F5530091C496 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885E11E56F5530091C496 /* MessageModel.swift */; };
+		FAA885E91E56F7800091C496 /* DialogsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885E81E56F7800091C496 /* DialogsModel.swift */; };
+		FAA885EB1E570AB20091C496 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885EA1E570AB20091C496 /* Util.swift */; };
+		FAA885ED1E570AE30091C496 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885EC1E570AE30091C496 /* NetworkManager.swift */; };
+		FAA885EF1E57833E0091C496 /* DialogCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885EE1E57833E0091C496 /* DialogCellNode.swift */; };
+		FAB8DA781E583B8200A4FD29 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8DA771E583B8200A4FD29 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +61,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A321FB829D9C78FB6311B609 /* Pods_VkMultiChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VkMultiChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6991A305E56718539407DED /* Pods-VkMultiChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkMultiChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-VkMultiChat/Pods-VkMultiChat.release.xcconfig"; sourceTree = "<group>"; };
+		D70C28DB6B2B5F880AD484FF /* Pods-VkMultiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkMultiChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VkMultiChat/Pods-VkMultiChat.debug.xcconfig"; sourceTree = "<group>"; };
+		FA41089E1E5B331B00FEE6C9 /* ChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		FA4108A01E5B393200FEE6C9 /* LinkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkModel.swift; sourceTree = "<group>"; };
+		FA4108A21E5BC60A00FEE6C9 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		FA4108AB1E5C951D00FEE6C9 /* MessagesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesModel.swift; sourceTree = "<group>"; };
+		FA4108AD1E5CBB0200FEE6C9 /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		FA4108B01E5CBB7400FEE6C9 /* MessagesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+		FA4108B31E5D7B8F00FEE6C9 /* MessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		FA4108B51E5DCA0400FEE6C9 /* MessageGroupExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageGroupExtensions.swift; sourceTree = "<group>"; };
+		FA4108B71E5F48DE00FEE6C9 /* MessageContentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageContentNode.swift; sourceTree = "<group>"; };
+		FA4108B91E5F490F00FEE6C9 /* NestedMessageContentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedMessageContentNode.swift; sourceTree = "<group>"; };
+		FA4108BB1E5FB3C400FEE6C9 /* HeaderFwdMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderFwdMessage.swift; sourceTree = "<group>"; };
+		FA4108BD1E5FBE7000FEE6C9 /* VerticalDeterminator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalDeterminator.swift; sourceTree = "<group>"; };
 		FAA885541E53777C0091C496 /* VkMultiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkMultiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA885571E53777C0091C496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAA885591E53777C0091C496 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAA8855C1E53777C0091C496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA885591E53777C0091C496 /* DialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
 		FAA8855F1E53777C0091C496 /* VkMultiChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VkMultiChat.xcdatamodel; sourceTree = "<group>"; };
 		FAA885611E53777C0091C496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA885641E53777C0091C496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +89,20 @@
 		FAA885761E53777D0091C496 /* VkMultiChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkMultiChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA8857A1E53777D0091C496 /* VkMultiChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkMultiChatUITests.swift; sourceTree = "<group>"; };
 		FAA8857C1E53777D0091C496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA885881E53A31A0091C496 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAA8858B1E53C2D80091C496 /* ViewModelServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelServices.swift; sourceTree = "<group>"; };
+		FAA8858D1E53C2F10091C496 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		FAA885D01E551DC30091C496 /* DialogsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsViewModel.swift; sourceTree = "<group>"; };
+		FAA885D31E551EB80091C496 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FAA885D51E564C6D0091C496 /* DialogViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogViewModel.swift; sourceTree = "<group>"; };
+		FAA885D71E565FDF0091C496 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		FAA885DD1E56F51F0091C496 /* DialogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogModel.swift; sourceTree = "<group>"; };
+		FAA885E11E56F5530091C496 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		FAA885E81E56F7800091C496 /* DialogsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsModel.swift; sourceTree = "<group>"; };
+		FAA885EA1E570AB20091C496 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		FAA885EC1E570AE30091C496 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FAA885EE1E57833E0091C496 /* DialogCellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogCellNode.swift; sourceTree = "<group>"; };
+		FAB8DA771E583B8200A4FD29 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67DE8E36AD0BE045AA9397F9 /* Pods_VkMultiChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +131,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B20FB51D1DC08BBCE6432E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D70C28DB6B2B5F880AD484FF /* Pods-VkMultiChat.debug.xcconfig */,
+				A6991A305E56718539407DED /* Pods-VkMultiChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA4108A41E5C910A00FEE6C9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAA885881E53A31A0091C496 /* LoginViewController.swift */,
+				FAA885D71E565FDF0091C496 /* LoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		FA4108A51E5C911600FEE6C9 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				FAA885591E53777C0091C496 /* DialogsViewController.swift */,
+				FAA885EE1E57833E0091C496 /* DialogCellNode.swift */,
+			);
+			name = Conversation;
+			sourceTree = "<group>";
+		};
+		FA4108A61E5C913900FEE6C9 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				FAA885D01E551DC30091C496 /* DialogsViewModel.swift */,
+				FAA885D51E564C6D0091C496 /* DialogViewModel.swift */,
+				FA4108A21E5BC60A00FEE6C9 /* ChatViewModel.swift */,
+			);
+			name = Conversation;
+			sourceTree = "<group>";
+		};
+		FA4108A71E5C914F00FEE6C9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAA885D31E551EB80091C496 /* LoginViewModel.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		FA4108A81E5C916A00FEE6C9 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				FAA885E81E56F7800091C496 /* DialogsModel.swift */,
+				FAA885DD1E56F51F0091C496 /* DialogModel.swift */,
+				FA41089E1E5B331B00FEE6C9 /* ChatModel.swift */,
+			);
+			name = Conversation;
+			sourceTree = "<group>";
+		};
+		FA4108A91E5C918800FEE6C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA4108A01E5B393200FEE6C9 /* LinkModel.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		FA4108AA1E5C919400FEE6C9 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				FA4108AB1E5C951D00FEE6C9 /* MessagesModel.swift */,
+				FAA885E11E56F5530091C496 /* MessageModel.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		FA4108AF1E5CBB0900FEE6C9 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				FA4108AD1E5CBB0200FEE6C9 /* MessagesController.swift */,
+				FA4108B51E5DCA0400FEE6C9 /* MessageGroupExtensions.swift */,
+				FA4108B71E5F48DE00FEE6C9 /* MessageContentNode.swift */,
+				FA4108B91E5F490F00FEE6C9 /* NestedMessageContentNode.swift */,
+				FA4108BB1E5FB3C400FEE6C9 /* HeaderFwdMessage.swift */,
+				FA4108BD1E5FBE7000FEE6C9 /* VerticalDeterminator.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		FA4108B21E5CBB7B00FEE6C9 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				FA4108B01E5CBB7400FEE6C9 /* MessagesViewModel.swift */,
+				FA4108B31E5D7B8F00FEE6C9 /* MessageViewModel.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
 		FAA8854B1E53777C0091C496 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +232,8 @@
 				FAA8856E1E53777D0091C496 /* VkMultiChatTests */,
 				FAA885791E53777D0091C496 /* VkMultiChatUITests */,
 				FAA885551E53777C0091C496 /* Products */,
+				2B20FB51D1DC08BBCE6432E8 /* Pods */,
+				FF1619D95AB02021F1DD7AEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +251,11 @@
 			isa = PBXGroup;
 			children = (
 				FAA885571E53777C0091C496 /* AppDelegate.swift */,
-				FAA885591E53777C0091C496 /* ViewController.swift */,
-				FAA8855B1E53777C0091C496 /* Main.storyboard */,
+				FAB8DA7A1E583BA100A4FD29 /* Services */,
+				FAB8DA761E583B6C00A4FD29 /* Utils */,
+				FAA885E71E56F5E90091C496 /* Models */,
+				FAA885D21E551DDF0091C496 /* ViewModels */,
+				FAA8858A1E53B4920091C496 /* Views */,
 				FAA885611E53777C0091C496 /* Assets.xcassets */,
 				FAA885631E53777C0091C496 /* LaunchScreen.storyboard */,
 				FAA885661E53777C0091C496 /* Info.plist */,
@@ -128,6 +282,63 @@
 			path = VkMultiChatUITests;
 			sourceTree = "<group>";
 		};
+		FAA8858A1E53B4920091C496 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA4108A41E5C910A00FEE6C9 /* Login */,
+				FA4108A51E5C911600FEE6C9 /* Conversation */,
+				FA4108AF1E5CBB0900FEE6C9 /* Message */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FAA885D21E551DDF0091C496 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA4108A71E5C914F00FEE6C9 /* Login */,
+				FA4108A61E5C913900FEE6C9 /* Conversation */,
+				FA4108B21E5CBB7B00FEE6C9 /* Message */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		FAA885E71E56F5E90091C496 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA4108A81E5C916A00FEE6C9 /* Conversation */,
+				FA4108AA1E5C919400FEE6C9 /* Message */,
+				FA4108A91E5C918800FEE6C9 /* Helpers */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FAB8DA761E583B6C00A4FD29 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8858D1E53C2F10091C496 /* Protocols.swift */,
+				FAA885EA1E570AB20091C496 /* Util.swift */,
+				FAB8DA771E583B8200A4FD29 /* Extentions.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FAB8DA7A1E583BA100A4FD29 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8858B1E53C2D80091C496 /* ViewModelServices.swift */,
+				FAA885EC1E570AE30091C496 /* NetworkManager.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		FF1619D95AB02021F1DD7AEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A321FB829D9C78FB6311B609 /* Pods_VkMultiChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +346,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA8857F1E53777D0091C496 /* Build configuration list for PBXNativeTarget "VkMultiChat" */;
 			buildPhases = (
+				D53D6FE96CB5CED57B5E5DB1 /* [CP] Check Pods Manifest.lock */,
 				FAA885501E53777C0091C496 /* Sources */,
 				FAA885511E53777C0091C496 /* Frameworks */,
 				FAA885521E53777C0091C496 /* Resources */,
+				E204507F8D8A7931BE53A8F6 /* [CP] Embed Pods Frameworks */,
+				2B370AA2F32A8095F5902583 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,7 +410,7 @@
 				TargetAttributes = {
 					FAA885531E53777C0091C496 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = XC3Q2BB5B9;
+						DevelopmentTeam = 734U73WU5K;
 						ProvisioningStyle = Automatic;
 					};
 					FAA8856A1E53777D0091C496 = {
@@ -238,9 +452,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA885D81E565FDF0091C496 /* LoginViewController.xib in Resources */,
 				FAA885651E53777C0091C496 /* LaunchScreen.storyboard in Resources */,
 				FAA885621E53777C0091C496 /* Assets.xcassets in Resources */,
-				FAA8855D1E53777C0091C496 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +474,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B370AA2F32A8095F5902583 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VkMultiChat/Pods-VkMultiChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D53D6FE96CB5CED57B5E5DB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E204507F8D8A7931BE53A8F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VkMultiChat/Pods-VkMultiChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAA885501E53777C0091C496 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4108B11E5CBB7400FEE6C9 /* MessagesViewModel.swift in Sources */,
+				FAA885D11E551DC30091C496 /* DialogsViewModel.swift in Sources */,
+				FA4108B81E5F48DE00FEE6C9 /* MessageContentNode.swift in Sources */,
+				FAA885E91E56F7800091C496 /* DialogsModel.swift in Sources */,
+				FAA885DE1E56F51F0091C496 /* DialogModel.swift in Sources */,
 				FAA885601E53777C0091C496 /* VkMultiChat.xcdatamodeld in Sources */,
-				FAA8855A1E53777C0091C496 /* ViewController.swift in Sources */,
+				FA41089F1E5B331B00FEE6C9 /* ChatModel.swift in Sources */,
+				FA4108BC1E5FB3C400FEE6C9 /* HeaderFwdMessage.swift in Sources */,
+				FAA885D61E564C6D0091C496 /* DialogViewModel.swift in Sources */,
+				FA4108B61E5DCA0400FEE6C9 /* MessageGroupExtensions.swift in Sources */,
+				FAA8855A1E53777C0091C496 /* DialogsViewController.swift in Sources */,
+				FAA885891E53A31A0091C496 /* LoginViewController.swift in Sources */,
+				FAB8DA781E583B8200A4FD29 /* Extentions.swift in Sources */,
+				FA4108BA1E5F490F00FEE6C9 /* NestedMessageContentNode.swift in Sources */,
+				FA4108A11E5B393200FEE6C9 /* LinkModel.swift in Sources */,
+				FAA885EB1E570AB20091C496 /* Util.swift in Sources */,
+				FA4108AC1E5C951D00FEE6C9 /* MessagesModel.swift in Sources */,
+				FA4108A31E5BC60A00FEE6C9 /* ChatViewModel.swift in Sources */,
+				FAA8858E1E53C2F10091C496 /* Protocols.swift in Sources */,
+				FAA885EF1E57833E0091C496 /* DialogCellNode.swift in Sources */,
 				FAA885581E53777C0091C496 /* AppDelegate.swift in Sources */,
+				FA4108BE1E5FBE7000FEE6C9 /* VerticalDeterminator.swift in Sources */,
+				FAA885ED1E570AE30091C496 /* NetworkManager.swift in Sources */,
+				FA4108AE1E5CBB0200FEE6C9 /* MessagesController.swift in Sources */,
+				FAA885E21E56F5530091C496 /* MessageModel.swift in Sources */,
+				FAA8858C1E53C2D80091C496 /* ViewModelServices.swift in Sources */,
+				FAA885D41E551EB80091C496 /* LoginViewModel.swift in Sources */,
+				FA4108B41E5D7B8F00FEE6C9 /* MessageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +590,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAA8855B1E53777C0091C496 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAA8855C1E53777C0091C496 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAA885631E53777C0091C496 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -417,12 +696,13 @@
 		};
 		FAA885801E53777D0091C496 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D70C28DB6B2B5F880AD484FF /* Pods-VkMultiChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XC3Q2BB5B9;
+				DEVELOPMENT_TEAM = 734U73WU5K;
 				INFOPLIST_FILE = VkMultiChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = astrolka.VkMultiChat;
+				PRODUCT_BUNDLE_IDENTIFIER = astrolka.VkMultiChat.com.my;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -430,12 +710,13 @@
 		};
 		FAA885811E53777D0091C496 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6991A305E56718539407DED /* Pods-VkMultiChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XC3Q2BB5B9;
+				DEVELOPMENT_TEAM = 734U73WU5K;
 				INFOPLIST_FILE = VkMultiChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = astrolka.VkMultiChat;
+				PRODUCT_BUNDLE_IDENTIFIER = astrolka.VkMultiChat.com.my;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -518,6 +799,7 @@
 				FAA885811E53777D0091C496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAA885821E53777D0091C496 /* Build configuration list for PBXNativeTarget "VkMultiChatTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +808,7 @@
 				FAA885841E53777D0091C496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAA885851E53777D0091C496 /* Build configuration list for PBXNativeTarget "VkMultiChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +817,7 @@
 				FAA885871E53777D0091C496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
