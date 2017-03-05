@@ -22,7 +22,7 @@ class MessagesController: NMessengerViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        insertNewMessages()
+        loadNewMessages()
         setNeedsStatusBarAppearanceUpdate()
     }
     
@@ -30,34 +30,39 @@ class MessagesController: NMessengerViewController {
         return .lightContent
     }
     
-    func insertNewMessages() {
+    func loadNewMessages() {
         shouldLoad = false
+        weak var weakSelf = self
         viewModel.loadMessages(complition: { (messages) in
-            var mesageGroups = [MessageGroup]()
-            var lastGroup: MessageGroup!
-            var previousVM: MessageViewModel!
-            for messageVM in messages.reversed() {
-                let content = MessageContentNode(viewModel: messageVM, bubbleConfiguration: self.sharedBubbleConfiguration)
-                let message = MessageNode(content: content)
-                message.cellPadding = self.messagePadding
-                message.currentViewController = self
-                if lastGroup == nil || previousVM.model.userId != messageVM.model.userId || lastGroup.isIncomingMessage != messageVM.isIncomingMessage {
-                    let newGroup = self.createMessageGroupFor(message: messageVM)
-                    newGroup.isIncomingMessage = messageVM.isIncomingMessage
-                    newGroup.addMessageToGroup(message, completion: nil)
-                    mesageGroups.append(newGroup)
-                    lastGroup = newGroup
-                } else {
-                    lastGroup.addMessageToGroup(message, completion: nil)
-                }
-                previousVM = messageVM
-            }
-            self.messengerView.addMessages(mesageGroups, scrollsToMessage: false)
-            self.messengerView.scrollToLastMessage(animated: false)
+            weakSelf?.insertNewMessages(messages: messages)
             self.shouldLoad = true
         }) { (error) in
             self.shouldLoad = true
         }
+    }
+    
+    fileprivate func insertNewMessages (messages: [MessageViewModel]) {
+        var mesageGroups = [MessageGroup]()
+        var lastGroup: MessageGroup!
+        var previousVM: MessageViewModel!
+        for messageVM in messages.reversed() {
+            let content = MessageContentNode(viewModel: messageVM, bubbleConfiguration: sharedBubbleConfiguration)
+            let message = MessageNode(content: content)
+            message.cellPadding = messagePadding
+            message.currentViewController = self
+            if lastGroup == nil || previousVM.model.userId != messageVM.model.userId || lastGroup.isIncomingMessage != messageVM.isIncomingMessage {
+                let newGroup = createMessageGroupFor(message: messageVM)
+                newGroup.isIncomingMessage = messageVM.isIncomingMessage
+                newGroup.addMessageToGroup(message, completion: nil)
+                mesageGroups.append(newGroup)
+                lastGroup = newGroup
+            } else {
+                lastGroup.addMessageToGroup(message, completion: nil)
+            }
+            previousVM = messageVM
+        }
+        self.messengerView.addMessages(mesageGroups, scrollsToMessage: false)
+        self.messengerView.scrollToLastMessage(animated: false)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -87,5 +92,9 @@ class MessagesController: NMessengerViewController {
     
     func batchFetchContent() {
         
+    }
+    
+    deinit {
+        print("MessagesController deinitialized")
     }
 }

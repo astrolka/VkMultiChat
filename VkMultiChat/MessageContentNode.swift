@@ -20,6 +20,7 @@ class MessageContentNode: ContentNode {
     
     init(viewModel: MessageViewModel, bubbleConfiguration: BubbleConfigurationProtocol?) {
         super.init(bubbleConfiguration: bubbleConfiguration)
+        backgroundColor = .clear
         self.viewModel = viewModel
         setupSubnodes(linesCount: 0, msgViewModel: viewModel)
     }

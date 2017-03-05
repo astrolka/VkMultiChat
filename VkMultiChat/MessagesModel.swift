@@ -26,7 +26,6 @@ class MessagesModel {
         items.forEach { (message) in
             self.addIdsFromMessage(dict: message)
         }
-        
         NetworkManager.sharedInstance.loadUsersAndGroups(usersId: Array(usersIds), groupsId: Array(groupsIds), success: { (profiles) in
             self.profiles = profiles
             for message in items {

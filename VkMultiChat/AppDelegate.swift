@@ -14,15 +14,15 @@ import VK_ios_sdk
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var vkSdk: VKSdk!
-    var navController: UINavigationController!
+    //var vkSdk: VKSdk!
     var services: VMServicesProtocol!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         var viewModel: Any!
+        var navController: UINavigationController!
         
-        vkSdk = VKSdk.initialize(withAppId: "5875924")
+        VKSdk.initialize(withAppId: "5875924")
         navController = UINavigationController()
         navController.navigationBar.isTranslucent = false
         navController.navigationBar.barTintColor = .blue

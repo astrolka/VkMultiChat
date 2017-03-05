@@ -19,7 +19,6 @@
 		FA4108B81E5F48DE00FEE6C9 /* MessageContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108B71E5F48DE00FEE6C9 /* MessageContentNode.swift */; };
 		FA4108BA1E5F490F00FEE6C9 /* NestedMessageContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108B91E5F490F00FEE6C9 /* NestedMessageContentNode.swift */; };
 		FA4108BC1E5FB3C400FEE6C9 /* HeaderFwdMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108BB1E5FB3C400FEE6C9 /* HeaderFwdMessage.swift */; };
-		FA4108BE1E5FBE7000FEE6C9 /* VerticalDeterminator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4108BD1E5FBE7000FEE6C9 /* VerticalDeterminator.swift */; };
 		FAA885581E53777C0091C496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885571E53777C0091C496 /* AppDelegate.swift */; };
 		FAA8855A1E53777C0091C496 /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA885591E53777C0091C496 /* DialogsViewController.swift */; };
 		FAA885601E53777C0091C496 /* VkMultiChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAA8855E1E53777C0091C496 /* VkMultiChat.xcdatamodeld */; };
@@ -75,7 +74,6 @@
 		FA4108B71E5F48DE00FEE6C9 /* MessageContentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageContentNode.swift; sourceTree = "<group>"; };
 		FA4108B91E5F490F00FEE6C9 /* NestedMessageContentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedMessageContentNode.swift; sourceTree = "<group>"; };
 		FA4108BB1E5FB3C400FEE6C9 /* HeaderFwdMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderFwdMessage.swift; sourceTree = "<group>"; };
-		FA4108BD1E5FBE7000FEE6C9 /* VerticalDeterminator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalDeterminator.swift; sourceTree = "<group>"; };
 		FAA885541E53777C0091C496 /* VkMultiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkMultiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA885571E53777C0091C496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA885591E53777C0091C496 /* DialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 				FA4108B71E5F48DE00FEE6C9 /* MessageContentNode.swift */,
 				FA4108B91E5F490F00FEE6C9 /* NestedMessageContentNode.swift */,
 				FA4108BB1E5FB3C400FEE6C9 /* HeaderFwdMessage.swift */,
-				FA4108BD1E5FBE7000FEE6C9 /* VerticalDeterminator.swift */,
 			);
 			name = Message;
 			sourceTree = "<group>";
@@ -548,7 +545,6 @@
 				FAA8858E1E53C2F10091C496 /* Protocols.swift in Sources */,
 				FAA885EF1E57833E0091C496 /* DialogCellNode.swift in Sources */,
 				FAA885581E53777C0091C496 /* AppDelegate.swift in Sources */,
-				FA4108BE1E5FBE7000FEE6C9 /* VerticalDeterminator.swift in Sources */,
 				FAA885ED1E570AE30091C496 /* NetworkManager.swift in Sources */,
 				FA4108AE1E5CBB0200FEE6C9 /* MessagesController.swift in Sources */,
 				FAA885E21E56F5530091C496 /* MessageModel.swift in Sources */,

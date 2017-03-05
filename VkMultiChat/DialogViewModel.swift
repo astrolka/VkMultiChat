@@ -23,7 +23,7 @@ class DialogViewModel {
     var messageImageName: String?
     var onlineImgName: String?
     
-    private weak var services: VMServicesProtocol!
+    fileprivate weak var services: VMServicesProtocol!
     weak var cellNode: DialogCellNode!
     var model: DialogModel!
     
@@ -76,16 +76,17 @@ class DialogViewModel {
             st.onlineImgName != nd.onlineImgName
     }
     
-    func openMessages() {
-        let vm = MessagesViewModel(services, dialogViewModel: self)
-        services.pushViewModel(vm, animated: true)
-    }
 }
 
 extension DialogViewModel: CellNodeVMProtocol {
     
     internal func getCellNode() -> ASCellNode {
         return DialogCellNode(viewModel: self)
+    }
+    
+    func openMessages() {
+        let vm = MessagesViewModel(services, dialogViewModel: self)
+        services.pushViewModel(vm, animated: true)
     }
     
 }
