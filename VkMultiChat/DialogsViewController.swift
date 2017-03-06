@@ -13,25 +13,15 @@ import VK_ios_sdk
 class DialogsViewController: UIViewController, NodeProtocol {
     
     var viewModel: DialogsViewModel!
-    var tableNode: ASTableNode!
-    var shouldLoad = false
-    private var refreshControl: UIRefreshControl!
+    private var tableNode: ASTableNode!
+    fileprivate var shouldLoad = false
+    private weak var refreshControl: UIRefreshControl!
     
     //MARK: - Initializtion
     
     required init(viewModel: Any) {
         super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel as! DialogsViewModel
-        
-        tableNode = ASTableNode(style: .plain)
-        tableNode.delegate = self
-        tableNode.dataSource = self
-        
-        refreshControl = UIRefreshControl()
-        refreshControl.backgroundColor = .clear
-        refreshControl.addTarget(self, action: #selector(refreshTableNode), for: .valueChanged)
-        tableNode.view.addSubview(refreshControl)
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -42,9 +32,21 @@ class DialogsViewController: UIViewController, NodeProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tableNode = ASTableNode(style: .plain)
+        tableNode.delegate = self
+        tableNode.dataSource = self
+        view.addSubnode(tableNode)
+        self.tableNode = tableNode
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.backgroundColor = .clear
+        refreshControl.addTarget(self, action: #selector(refreshTableNode), for: .valueChanged)
+        tableNode.view.addSubview(refreshControl)
+        self.refreshControl = refreshControl
+        
         navigationController?.setNavigationBarHidden(false, animated: false)
         navigationItem.title = "Сообщения"
-        view.addSubnode(tableNode)
         setNeedsStatusBarAppearanceUpdate()
         insertDialogs()
     }

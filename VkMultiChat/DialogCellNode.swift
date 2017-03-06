@@ -18,14 +18,14 @@ class DialogCellNode: ASCellNode {
         return Util.isIpad() ? 140 : 72
     }()
     
-    private var chatImgIdentificator: ASImageNode?
-    private var messageImgIdentificator: ASImageNode?
-    private var onlineIndicator: ASImageNode?
-    private var dialogImg = ASNetworkImageNode()
-    private var avatarImg: ASNetworkImageNode?
-    private var titleNode = ASTextNode()
-    private var messageNode = ASTextNode()
-    private var dateNode = ASTextNode()
+    private weak var chatImgIdentificator: ASImageNode?
+    private weak var messageImgIdentificator: ASImageNode?
+    private weak var onlineIndicator: ASImageNode?
+    private weak var dialogImg: ASNetworkImageNode!
+    private weak var avatarImg: ASNetworkImageNode?
+    private weak var titleNode: ASTextNode!
+    private weak var messageNode: ASTextNode!
+    private weak var dateNode: ASTextNode!
     
     //MARK: - Initialize
     
@@ -43,17 +43,21 @@ class DialogCellNode: ASCellNode {
             backgroundColor = UIColor(red: 190 / 255, green: 205 / 255, blue: 235 / 255, alpha: 0.3)
         }
         
-        dialogImg = ASNetworkImageNode.createWith(size: imgSize)
+        let dialogImg = ASNetworkImageNode.createWith(size: imgSize)
         dialogImg.delegate = self
         dialogImg.url = viewModel.dialogImageUrl
         addSubnode(dialogImg)
+        self.dialogImg = dialogImg
         
+        let titleNode = ASTextNode()
         titleNode.attributedText = NSAttributedString.forDialogTitle(text: viewModel.title)
         titleNode.truncationMode = .byTruncatingTail
         titleNode.maximumNumberOfLines = 1
         titleNode.style.flexShrink = 1
         addSubnode(titleNode)
+        self.titleNode = titleNode
         
+        let messageNode = ASTextNode()
         messageNode.attributedText = NSAttributedString.forMessagePreview(text: viewModel.message)
         messageNode.maximumNumberOfLines = self.viewModel.isOutMessage! ? 1 : 2
         messageNode.truncationMode = .byTruncatingTail
@@ -67,36 +71,43 @@ class DialogCellNode: ASCellNode {
             messageNode.backgroundColor = UIColor(red: 190 / 255, green: 205 / 255, blue: 235 / 255, alpha: 0.3)
         }
         addSubnode(messageNode)
+        self.messageNode = messageNode
         
+        let dateNode = ASTextNode()
         dateNode.attributedText = NSAttributedString.forDate(date: viewModel.date)
         dateNode.maximumNumberOfLines = 1
         addSubnode(dateNode)
+        self.dateNode = dateNode
         
         if viewModel.innerImageUrl != nil {
-            avatarImg = ASNetworkImageNode.createWith(size: imgSize/2)
-            avatarImg?.delegate = self
-            avatarImg?.url = viewModel.innerImageUrl
-            addSubnode(avatarImg!)
+            let avatarImg = ASNetworkImageNode.createWith(size: imgSize/2)
+            avatarImg.delegate = self
+            avatarImg.url = viewModel.innerImageUrl
+            addSubnode(avatarImg)
+            self.avatarImg = avatarImg
         }
         
         if let imgName = viewModel.titleImageName {
-            chatImgIdentificator = ASImageNode()
-            chatImgIdentificator?.image = UIImage(named: imgName)
-            addSubnode(chatImgIdentificator!)
+            let chatImgIdentificator = ASImageNode()
+            chatImgIdentificator.image = UIImage(named: imgName)
+            addSubnode(chatImgIdentificator)
+            self.chatImgIdentificator = chatImgIdentificator
         }
         
         if let imgName = viewModel.messageImageName {
-            messageImgIdentificator = ASImageNode()
-            messageImgIdentificator?.image = UIImage(named: imgName)
-            addSubnode(messageImgIdentificator!)
+            let messageImgIdentificator = ASImageNode()
+            messageImgIdentificator.image = UIImage(named: imgName)
+            addSubnode(messageImgIdentificator)
+            self.messageImgIdentificator = messageImgIdentificator
         }
         
         if let imgName = viewModel.onlineImgName {
-            onlineIndicator = ASImageNode()
-            onlineIndicator?.style.width = ASDimensionMakeWithPoints(10)
-            onlineIndicator?.style.height = ASDimensionMakeWithPoints(10)
-            onlineIndicator?.image = UIImage(named: imgName)
-            addSubnode(onlineIndicator!)
+            let onlineIndicator = ASImageNode()
+            onlineIndicator.style.width = ASDimensionMakeWithPoints(10)
+            onlineIndicator.style.height = ASDimensionMakeWithPoints(10)
+            onlineIndicator.image = UIImage(named: imgName)
+            addSubnode(onlineIndicator)
+            self.onlineIndicator = onlineIndicator
         }
                 
     }
@@ -148,6 +159,10 @@ class DialogCellNode: ASCellNode {
     
     override func layout() {
         super.layout()
+    }
+    
+    deinit {
+        print("DialogCellNode deinitialized")
     }
     
 }
