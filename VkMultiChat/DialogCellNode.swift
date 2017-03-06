@@ -61,13 +61,9 @@ class DialogCellNode: ASCellNode {
         messageNode.style.flexGrow = 1
         if !viewModel.isRead && viewModel.isOutMessage {
             messageNode.clipsToBounds = true
-            if Util.isIpad() {
-                messageNode.cornerRadius = 8
-                messageNode.textContainerInset = UIEdgeInsetsMake(8, 8, 8, 8)
-            } else {
-                messageNode.cornerRadius = 4
-                messageNode.textContainerInset = UIEdgeInsetsMake(4, 4, 4, 4)
-            }
+            let size: CGFloat = Util.isIpad() ? 8 : 4
+            messageNode.cornerRadius = size
+            messageNode.textContainerInset = UIEdgeInsetsMake(size, size, size, size)
             messageNode.backgroundColor = UIColor(red: 190 / 255, green: 205 / 255, blue: 235 / 255, alpha: 0.3)
         }
         addSubnode(messageNode)
